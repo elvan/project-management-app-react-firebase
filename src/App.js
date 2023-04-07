@@ -6,6 +6,7 @@ import './App.css';
 
 // pages & components
 import Navbar from './components/Navbar';
+import OnlineUsers from './components/OnlineUsers';
 import Sidebar from './components/Sidebar';
 import Create from './pages/create/Create';
 import Dashboard from './pages/dashboard/Dashboard';
@@ -41,11 +42,12 @@ function App() {
                 {!user && <Login />}
               </Route>
               <Route path='/signup'>
-                {user && <Redirect to='/' />}
+                {user && user.displayName && <Redirect to='/' />}
                 {!user && <Signup />}
               </Route>
             </Switch>
           </div>
+          {user && <OnlineUsers />}
         </BrowserRouter>
       )}
     </div>
