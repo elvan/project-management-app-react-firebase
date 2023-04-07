@@ -5,6 +5,7 @@ import './App.css';
 
 // pages & components
 import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
 import Create from './pages/create/Create';
 import Dashboard from './pages/dashboard/Dashboard';
 import Login from './pages/login/Login';
@@ -15,6 +16,7 @@ function App() {
   return (
     <div className='App'>
       <BrowserRouter>
+        <Sidebar />
         <div className='container'>
           <Navbar />
           <Switch>
