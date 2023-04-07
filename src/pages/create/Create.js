@@ -1,7 +1,15 @@
 import { useState } from 'react';
+import Select from 'react-select';
 
 // styles
 import './Create.css';
+
+const categories = [
+  { value: 'development', label: 'Development' },
+  { value: 'design', label: 'Design' },
+  { value: 'sales', label: 'Sales' },
+  { value: 'marketing', label: 'Marketing' },
+];
 
 export default function Create() {
   // form field values
@@ -10,11 +18,12 @@ export default function Create() {
   const [dueDate, setDueDate] = useState('');
   const [category, setCategory] = useState('');
   const [assignedUsers, setAssignedUsers] = useState([]);
+  const [formError, setFormError] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log(name, details, dueDate);
+    console.log(name, details, dueDate, category.value, assignedUsers);
   };
 
   return (
@@ -49,7 +58,10 @@ export default function Create() {
         </label>
         <label>
           <span>Project category:</span>
-          {/* select here later */}
+          <Select
+            onChange={(option) => setCategory(option)}
+            options={categories}
+          />
         </label>
         <label>
           <span>Assign to:</span>
@@ -57,6 +69,8 @@ export default function Create() {
         </label>
 
         <button className='btn'>Add Project</button>
+
+        {formError && <p className='error'>{formError}</p>}
       </form>
     </div>
   );
