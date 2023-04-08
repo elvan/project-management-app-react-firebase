@@ -13,13 +13,13 @@ export default function Navbar() {
   return (
     <nav className='navbar'>
       <ul>
+        <li className='logo'>
+          <img src={Temple} alt='dojo logo' />
+          <span>TheProjects</span>
+        </li>
+
         {!user && (
           <>
-            <li className='logo'>
-              <img src={Temple} alt='dojo logo' />
-              <span>TheProjects</span>
-            </li>
-
             <li>
               <Link to='/login'>Login</Link>
             </li>
