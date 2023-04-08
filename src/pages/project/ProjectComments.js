@@ -27,7 +27,6 @@ export default function ProjectComments() {
         <label>
           <span>Add new comment:</span>
           <textarea
-            required
             onChange={(e) => setNewComment(e.target.value)}
             value={newComment}
           ></textarea>
