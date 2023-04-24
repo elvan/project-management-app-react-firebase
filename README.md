@@ -1,3 +1,35 @@
+# ProjectManagement
+
+![Projects Listing](https://github.com/elvan/project-management-app-react-firebase/raw/main/_screenshots/Screenshot%202023-04-24%20204957.png)
+*Projects Listing*
+
+---
+
+![Filtered Projects](https://github.com/elvan/project-management-app-react-firebase/raw/main/_screenshots/Screenshot%202023-04-24%20205013.png)
+*Filtered Projects*
+
+---
+
+![Project Details](https://github.com/elvan/project-management-app-react-firebase/raw/main/_screenshots/Screenshot%202023-04-24%20205027.png)
+*Project Details*
+
+---
+
+![Creating a New Project](https://github.com/elvan/project-management-app-react-firebase/raw/main/_screenshots/Screenshot%202023-04-24%20205041.png)
+*Creating a New Project*
+
+---
+
+![User Sign Up](https://github.com/elvan/project-management-app-react-firebase/raw/main/_screenshots/Screenshot%202023-04-24%20205148.png)
+*User Sign Up*
+
+---
+
+![User Login](https://github.com/elvan/project-management-app-react-firebase/raw/main/_screenshots/Screenshot%202023-04-24%20205201.png)
+*User Login*
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
